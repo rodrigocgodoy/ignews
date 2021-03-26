@@ -41,7 +41,8 @@ export default NextAuth({
         );
 
         return true;
-      } catch (error) {
+      } catch (err) {
+        console.error('entrou aqui', err);
         return false;
       }
     },
